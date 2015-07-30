@@ -29,3 +29,17 @@
     $ npm install --save bcrypt-nodejs
     $ npm install --save jsonwebtoken
     $ npm install --save express-jwt
+
+## Endpoints
+
+Create user
+
+    POST user/
+
+Login
+
+    POST auth/login
+
+Logout
+
+    DELETE auth/logout
