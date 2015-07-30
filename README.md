@@ -1,7 +1,7 @@
 #SailsJs Token Based Authentication Setup
 
 ## Globals
-    $ npm install --save sails
+    $ npm install -g sails
 
 ## Create a sails app
     $ sails new myApp
