@@ -43,3 +43,7 @@ Login
 Logout
 
     DELETE auth/logout
+
+Validate Token
+
+    POST auth/validate_token
