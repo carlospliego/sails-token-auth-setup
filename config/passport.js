@@ -2,7 +2,10 @@ var passport = require('passport'),
     LocalStrategy = require('passport-local').Strategy,
     bcrypt = require('bcrypt-nodejs');
 
-passport.use(new LocalStrategy(
+passport.use(new LocalStrategy({
+        usernameField: 'username', //check your model before you change this
+        passwordField: 'password'  //default, but you can query more fields
+    },
     function(username, password, done) {
         User.find({username:username}).exec(function(err, user) {
 
